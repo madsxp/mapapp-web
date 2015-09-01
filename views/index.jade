@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	a#testapi click me!
+	script(type="text/javascript").
+		$('document').ready(function(){
+
+			$('#testapi').click(function() {
+
+				$.get('http://localhost:3010/api', function(data) {
+					
+				});
+			});
+		});
