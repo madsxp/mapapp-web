@@ -1,14 +1,6 @@
 extends layout
 
 block content
-	a#testapi click me!
-	script(type="text/javascript").
-		$('document').ready(function(){
-
-			$('#testapi').click(function() {
-
-				$.get('http://localhost:3010/api', function(data) {
-					
-				});
-			});
-		});
+	canvas#ma_map
+	script(src="javascripts/paper-full.min.js")
+	script(src="javascripts/mapapp.js")
