@@ -1,6 +1,7 @@
 extends layout
 
 block content
-	canvas#ma_map
+	canvas(resize)#testcanvas
+	div#position
 	script(src="javascripts/paper-full.min.js")
 	script(src="javascripts/mapapp.js")

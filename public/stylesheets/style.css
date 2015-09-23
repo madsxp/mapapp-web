@@ -1,9 +1,30 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+
+	margin: 0;
+	overflow: hidden;
+	height: 100%;
+
 }
 
-a {
-  color: #00B7FF;
-  cursor: pointer;
+canvas[resize] {
+
+	width: 100%;
+	height: 100%;
+
+}
+
+#position {
+
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 200px;
+	height: 20px;
+	line-height: 20px;
+	color: #272822;
+	font-family: Arial;
+	font-size: 13px;
+	text-align: center;
+	background-color: #84DA2D;
+
 }
