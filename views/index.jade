@@ -1,7 +1,10 @@
 extends layout
 
 block content
-	canvas(resize)#testcanvas
+	canvas(resize keepaliv="true" data-paper-keepalive="true")#testcanvas
 	div#position
-	script(src="javascripts/paper-full.min.js")
-	script(src="javascripts/mapapp.js")
+	div#zoom_toolbar
+		div#zoom_in.zoom_button.button +
+		div#zoom_out.zoom_button.button -
+	script(src="javascripts/paper-full.js")
+	script(src="javascripts/mapapp.min.js")
